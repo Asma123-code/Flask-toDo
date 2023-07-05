@@ -1,0 +1,99 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+.my-button {
+    font-size: 12px;
+    padding: 8px 10px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    /* Add any other custom button styles here */
+}
+.nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin: 5px; /* Adjust the margin as needed */
+  background-color: rgb(125, 184, 239); /* Adjust the background color as needed */
+  border: 1px solid #ccc; /* Adjust the border properties as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+.nav-box a {
+  color: #333; /* Adjust the text color as needed */
+  text-decoration: none;
+  padding: 5px 10px; /* Adjust the padding as needed */
+}
+
+.nav-box a:hover {
+  background-color: rgb(0, 132, 255); /* Adjust the hover background color as needed */
+  color: #fff; /* Adjust the hover text color as needed */
+}

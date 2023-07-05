@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {# This block sets the title of the page to "Home" #}
+  Home
+{% endblock %}
+
+{% block content %}
+  {# This block contains the main content of the page #}
+
+  <h1 align="center" style="font-size: 24px;">
+    {# Heading for the Todo-List App #}
+    Todo-List App
+  </h1>
+
+  <form action="/add" method="post">
+    {# Form to add new tasks #}
+    <div align="center">
+      <label for="title" style="font-size: 18px;">
+        {# Label for the input field to enter the title of the task #}
+        To-Do Title:
+      </label>
+      <br>
+      <textarea name="title" rows="3" cols="50" placeholder="Enter Todo task here..." style="font-size: 16px;" required></textarea>
+      {# Adding the "required" attribute to make the textarea mandatory #}
+      <br>
+      <br>
+      <button type="submit" class="my-button" {% if todo_list == 0 %}disabled{% endif %}>
+        {# Button to submit the form and add the task #}
+        Add Task
+      </button>
+    </div>
+  </form>
+  
+  
+  <script>
+    // Add click event listeners to all close buttons
+    var closeButtons = document.querySelectorAll('.flash-messages .close');
+    closeButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        this.parentElement.style.display = 'none';
+      });
+    });
+  </script>
+{% endblock %}
